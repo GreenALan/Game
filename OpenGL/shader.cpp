@@ -60,9 +60,15 @@ void Shader::setFloat(const GLchar *name, GLfloat value, GLboolean useShader)
 
 void Shader::setInteger(const GLchar *name, GLint value,GLboolean useShader)
 {
+    //glGetUniformLocation(GLint program, const char *name)
+    /*
+     着色器的uniform 变量在GLSL中声明一个创建一个uniform表，
+     通过下面的name来找到对应的uniform 变量
+     然后在利用glUniform* 来进行将对应的uniform 赋值
+     */
     if(useShader)
         this->use();
-    glUniform1i(glGetUniformLocation(this->ID,name),value);
+    glUniform1i(glGetUniformLocation(this->ID,name),value); //分配位置值
 }
 
 void Shader::setVector2f(const GLchar *name, GLfloat x, GLfloat y,GLboolean useShader)

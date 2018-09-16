@@ -29,7 +29,7 @@ Shader ResourceManager::GetShader(std::string name)
 }
 
 Texture2D ResourceManager::LoadTexture(const GLchar *file, GLboolean alpha, std::string name){
-
+    //alpha 判断是否用rgba
     Textures[name] = loadTextureFromFile(file, alpha);
     return Textures[name];
 }
@@ -78,20 +78,13 @@ Shader ResourceManager::loadShaderFromFile(const GLchar *vShaderFile, const GLch
     catch(std::exception  e)
     {
         std::cout << "error::shader: failed to read shader files" << std::endl;
+        assert(0);
     }
     const GLchar *vShaderCode = vertexCode.c_str();
     const GLchar *fShaderCode = fragmentCode.c_str();
     const GLchar *gShaderCode = geometryCode.c_str();
     
     Shader shader;
-    if(gShaderCode == nullptr)
-    {
-        //shader.Compile(vShaderCode, fShaderCode,NULL);
-    }
-    else
-    {
-       //shader.Compile(vShaderCode, fShaderCode,gShaderCode);
-    }
     shader.Compile(vShaderCode, fShaderCode,gShaderFile != nullptr ? gShaderCode : nullptr);
     return shader;
 }
@@ -105,7 +98,12 @@ Texture2D ResourceManager::loadTextureFromFile(const GLchar *file, GLboolean alp
         texture.Image_Format = GL_RGBA;
     }
     int width,height;
-    unsigned char * image = SOIL_load_image(file,&width,&height,0,texture.Image_Format == GL_RGBA ? SOIL_LOAD_RGBA : SOIL_LOAD_RGB);
+    unsigned char *image = SOIL_load_image(file,&width,&height,0,texture.Image_Format == GL_RGBA ? SOIL_LOAD_RGBA : SOIL_LOAD_RGB);
+    if(image == nullptr){
+        printf("load texture error");
+        assert(0);
+        
+    }
     texture.Generate(width,height,image);
     SOIL_free_image_data(image);
     return texture;

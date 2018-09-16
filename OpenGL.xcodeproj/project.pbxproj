@@ -13,8 +13,12 @@
 		1769431B2113FA440056D2AD /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17DB1875210C662B0045C6B5 /* Game.cpp */; };
 		1769431D21140ACC0056D2AD /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1769431C21140ACC0056D2AD /* OpenGL.framework */; };
 		1769431F21140B780056D2AD /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1769431E21140B780056D2AD /* libGLEW.2.1.0.dylib */; };
+		1781CA8921451754004AEDAD /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1781CA8721451754004AEDAD /* Particle.cpp */; };
+		17847D68212EFAE6007E091E /* BallObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17847D66212EFAE6007E091E /* BallObject.cpp */; };
 		17A0997721184AD30096A1DD /* SpriteRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1769434C211577A80056D2AD /* SpriteRender.cpp */; };
 		17A0997821184C800096A1DD /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17DB1768210A0D260045C6B5 /* shader.cpp */; };
+		17A0997D2119C8F10096A1DD /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17A0997B2119C8F10096A1DD /* GameObject.cpp */; };
+		17A099802119D0940096A1DD /* GameLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17A0997E2119D0940096A1DD /* GameLevel.cpp */; };
 		17DB1892210CAF0B0045C6B5 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DB1891210CAF0B0045C6B5 /* libglfw.3.2.dylib */; };
 		17FFF16A1FFDCCE5004D5E64 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17FFF1691FFDCCE5004D5E64 /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -42,6 +46,22 @@
 		1769431E21140B780056D2AD /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		1769434C211577A80056D2AD /* SpriteRender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteRender.cpp; sourceTree = "<group>"; };
 		1769434D211577A80056D2AD /* SpriteRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteRender.h; sourceTree = "<group>"; };
+		176BEE352129B75300CA976E /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		176BEE362129B75300CA976E /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		176BEE372129B75300CA976E /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
+		176BEE382129B75300CA976E /* block_solid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_solid.png; sourceTree = "<group>"; };
+		176BEE3A2129B76C00CA976E /* four.lvl */ = {isa = PBXFileReference; lastKnownFileType = text; path = four.lvl; sourceTree = "<group>"; };
+		176BEE3B2129B76C00CA976E /* one.lvl */ = {isa = PBXFileReference; lastKnownFileType = text; path = one.lvl; sourceTree = "<group>"; };
+		176BEE3C2129B76C00CA976E /* three.lvl */ = {isa = PBXFileReference; lastKnownFileType = text; path = three.lvl; sourceTree = "<group>"; };
+		176BEE3D2129B76C00CA976E /* two.lvl */ = {isa = PBXFileReference; lastKnownFileType = text; path = two.lvl; sourceTree = "<group>"; };
+		1781CA832143DC95004AEDAD /* paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle.png; sourceTree = "<group>"; };
+		1781CA85214500F8004AEDAD /* particle.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = particle.vs; sourceTree = "<group>"; };
+		1781CA86214500F8004AEDAD /* particle.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = particle.frag; sourceTree = "<group>"; };
+		1781CA8721451754004AEDAD /* Particle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		1781CA8821451754004AEDAD /* Particle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		1781CA8E2147F8CC004AEDAD /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
+		17847D66212EFAE6007E091E /* BallObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BallObject.cpp; sourceTree = "<group>"; };
+		17847D67212EFAE6007E091E /* BallObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BallObject.h; sourceTree = "<group>"; };
 		17A098742117333D0096A1DD /* sprite.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sprite.frag; sourceTree = "<group>"; };
 		17A098752117333D0096A1DD /* sprite.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sprite.vs; sourceTree = "<group>"; };
 		17A098772117EA970096A1DD /* common.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
@@ -297,6 +317,10 @@
 		17A099742117EA970096A1DD /* vec3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vec3.hpp; sourceTree = "<group>"; };
 		17A099752117EA970096A1DD /* vec4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
 		17A099762117EA970096A1DD /* vector_relational.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
+		17A0997B2119C8F10096A1DD /* GameObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		17A0997C2119C8F10096A1DD /* GameObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		17A0997E2119D0940096A1DD /* GameLevel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameLevel.cpp; sourceTree = "<group>"; };
+		17A0997F2119D0940096A1DD /* GameLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameLevel.h; sourceTree = "<group>"; };
 		17DB1768210A0D260045C6B5 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		17DB1769210A0D260045C6B5 /* shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
 		17DB186F210AC9370045C6B5 /* texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = texture.cpp; sourceTree = "<group>"; };
@@ -344,9 +368,35 @@
 			path = include/KHR;
 			sourceTree = SOURCE_ROOT;
 		};
+		176BEE342129B75300CA976E /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				1781CA8E2147F8CC004AEDAD /* particle.png */,
+				1781CA832143DC95004AEDAD /* paddle.png */,
+				176BEE352129B75300CA976E /* awesomeface.png */,
+				176BEE362129B75300CA976E /* background.jpg */,
+				176BEE372129B75300CA976E /* block.png */,
+				176BEE382129B75300CA976E /* block_solid.png */,
+			);
+			path = textures;
+			sourceTree = SOURCE_ROOT;
+		};
+		176BEE392129B76C00CA976E /* levels */ = {
+			isa = PBXGroup;
+			children = (
+				176BEE3A2129B76C00CA976E /* four.lvl */,
+				176BEE3B2129B76C00CA976E /* one.lvl */,
+				176BEE3C2129B76C00CA976E /* three.lvl */,
+				176BEE3D2129B76C00CA976E /* two.lvl */,
+			);
+			path = levels;
+			sourceTree = SOURCE_ROOT;
+		};
 		17A098732117333D0096A1DD /* shaders */ = {
 			isa = PBXGroup;
 			children = (
+				1781CA86214500F8004AEDAD /* particle.frag */,
+				1781CA85214500F8004AEDAD /* particle.vs */,
 				17A098752117333D0096A1DD /* sprite.vs */,
 				17A098742117333D0096A1DD /* sprite.frag */,
 			);
@@ -669,11 +719,19 @@
 		17FFF1681FFDCCE5004D5E64 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				176BEE392129B76C00CA976E /* levels */,
+				176BEE342129B75300CA976E /* textures */,
 				17A098732117333D0096A1DD /* shaders */,
 				17DB176C210AAF7B0045C6B5 /* include */,
 				17FFF1691FFDCCE5004D5E64 /* main.cpp */,
+				1781CA8721451754004AEDAD /* Particle.cpp */,
+				1781CA8821451754004AEDAD /* Particle.h */,
+				17A0997E2119D0940096A1DD /* GameLevel.cpp */,
+				17A0997F2119D0940096A1DD /* GameLevel.h */,
 				1769430E2111E9AC0056D2AD /* glad.c */,
 				17DB1768210A0D260045C6B5 /* shader.cpp */,
+				17A0997B2119C8F10096A1DD /* GameObject.cpp */,
+				17A0997C2119C8F10096A1DD /* GameObject.h */,
 				17DB1769210A0D260045C6B5 /* shader.h */,
 				17DB186F210AC9370045C6B5 /* texture.cpp */,
 				17DB1870210AC9370045C6B5 /* texture.h */,
@@ -683,6 +741,8 @@
 				17DB1876210C662B0045C6B5 /* Game.h */,
 				1769434C211577A80056D2AD /* SpriteRender.cpp */,
 				1769434D211577A80056D2AD /* SpriteRender.h */,
+				17847D66212EFAE6007E091E /* BallObject.cpp */,
+				17847D67212EFAE6007E091E /* BallObject.h */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -757,7 +817,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A099802119D0940096A1DD /* GameLevel.cpp in Sources */,
+				1781CA8921451754004AEDAD /* Particle.cpp in Sources */,
+				17A0997D2119C8F10096A1DD /* GameObject.cpp in Sources */,
 				17A0997821184C800096A1DD /* shader.cpp in Sources */,
+				17847D68212EFAE6007E091E /* BallObject.cpp in Sources */,
 				17A0997721184AD30096A1DD /* SpriteRender.cpp in Sources */,
 				1769431B2113FA440056D2AD /* Game.cpp in Sources */,
 				176943152111F0690056D2AD /* ResourceManager.cpp in Sources */,

@@ -7,7 +7,6 @@
  ** option) any later version.
  ******************************************************************/
 #include <iostream>
-#define GLEW_STATIC
 #include "BaseInclude.h"
 
 #include "Game.h"
@@ -38,9 +37,6 @@ int main(int argc, char *argv[])
     GLFWwindow* window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Breakout", nullptr, nullptr);
     glfwMakeContextCurrent(window);
     
-    //这个变量值可以使GLEw在管理opengl 的函数指针 更多使用现代化技术。
-    //glewExperimental = GL_TRUE;
-    //glewInit();
     
     glfwSetKeyCallback(window, key_callback);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
